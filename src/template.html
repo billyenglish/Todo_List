@@ -3,90 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo List</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Document</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="pinned-projects-header">
-                <div>
-                    <ul class="pin-projects">
-                        <li><a href="#"><i class="ri-pushpin-2-fill"></i>Pinned Project</a></li>
-                        <li><a href="#"></a></li>
+    <dialog open>
+        <div class="close-icon">
+            <i class="ri-close-large-line"></i>
+        </div>
+        <form>
+            <div class="form-container">
+                <div class="form-header">
+                    <h5 class="form-title">Create Todo List</h5>
+
+                    <ul class="form-list">
+                        <li><a href="#">Create Task</a></li>
+                        <li><a href="#">Create Project</a></li>
+                        <li><a href="#">Daily Notes</a></li>
                     </ul>
                 </div>
-                <div>
-                    <button>Create Task</button>
+                <hr class="form-divider" />
+                <div class="form-body">
+                    <form>
+                        <h5 class="form-title">Task Manager</h5>
+
+                        <div>
+                        <div class="user-input">
+                            <input type="text" name="title" id="title" placeholder="Task Title">
+                        </div>
+                        <div class="user-input">
+                            <input type="text" name="description" id="description" placeholder="Task Description">
+                        </div>
+                        <div class="user-input">
+                            <input type="date" name="due_date" id="due_date" placeholder="Due Date">
+                        </div>
+                        <div class="user-input">
+                            <textarea name="user-textarea" id="user-textarea" placeholder="Task Details"></textarea>
+                        </div>
+                        <div class="form-control">
+                            <button type="button" id="low-button">Low</button>
+                            <button type="button" id="medium-button">Medium</button>
+                            <button type="button" id="high-button">High</button>
+                        </div>
+                        <div class="form-cancel-submit">
+                            <button type="button" id="cancel">Cancel</button>
+                            <button type="button" id="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        
-            <div class="pinned-projects-header">
-                <div>
-                    <ul>
-                        <li><a href="#">Overview</a></li>
-                        <li><a href="#">List</a></li>
-                        <li><a href="#">Board</a></li>
-                        <li><a href="#">Timeline</a></li>
-                    </ul>
-                </div>
-                <div>
-                    ul>li
-                </div>
-            </div>
-        </header>
-        <main>
-        </main>
-        <aside>
-            <nav>
-                <div class="nav-logo">
-                    <h3><span class="dashboard"><i class="ri-dashboard-line"></i></span>My Todo List</h3>
-                </div>
-
-                <div class="nav-top">
-                    <div class="nav-menu pinned-project">
-                        <h4 class="nav-title">pinned project</h4>
-
-                        <div>
-                            <ul class="nav-list pinned-list">
-                                <li class="nav-item"><a href="#"><i class="ri-pushpin-2-fill"></i>dribble shot</a></li>
-                                <li class="nav-item"><a href="#"><i class="ri-pushpin-2-fill"></i>Logistic App Project</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <hr class="nav-hr">
-
-                    <div class="nav-menu project-menu">
-                        <h4 class="nav-title">menu</h4>
-
-                        <div>
-                            <ul class="nav-list">
-                                <li class="nav-item"><a href="#"><i class="ri-home-4-line"></i>dashboard</a></li>
-                                <li class="nav-item"><a href="#"><i class="ri-notification-line"></i>notification</a></li>
-                                <li class="nav-item"><a href="#"><i class="ri-folder-5-line"></i>project</a></li>
-                                <li class="nav-item"><a href="#"><i class="ri-calendar-line"></i>calendar</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <hr class="nav-hr">
-
-                    <div class="nav-menu user-account">
-                        <h4 class="nav-title">account</h4>
-
-                        <div>
-                        <ul class="nav-list">
-                            <li class="nav-item"><a href="#"><i class="ri-user-line"></i>profile</a></li>
-                            <li class="nav-item"><a href="#"><i class="ri-group-fill"></i>teams</a></li>
-                            <li class="nav-item"><a href="#"><i class="ri-settings-2-line"></i>settings</a></li>
-                        </ul></div>
-                    </div>
-                </div>
-            </nav>
-        </aside>
-        <footer>
-        </footer>
-    </div>
+        </form>
+    </dialog>
 </body>
 </html>
