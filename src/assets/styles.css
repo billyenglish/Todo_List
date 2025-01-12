@@ -7,7 +7,7 @@
 }
 
 :root {
-    --header: 12vh;
+    --header: 8vh;
     --main: calc(100vh - calc(var(--header) + var(--footer)));
     --footer: 6vh;
 }
@@ -30,7 +30,7 @@ body {
         "header header header header header header header header"
         "aside main main main main main main main"
         "footer footer footer footer footer footer footer footer";
-    min-height: 100vh;
+    grid-template-columns: 1.5fr 3fr 3fr;
 }
 
 /* Header Section */
@@ -54,6 +54,15 @@ header {
     display: flex;
     align-items: center;
     gap: .5rem;
+}
+
+.nav-menu-left {
+    display: flex;
+    gap: .5rem;
+}
+
+.nav-menu-left i {
+    font-size: 1.75rem;
 }
 
 .ri-menu-line {
@@ -80,11 +89,30 @@ main {
     padding-top: 1rem;
 }
 
+/* Sections */
+
+#today-task {
+    display: none;
+}
+
+#week-task {
+    display: none;
+}
+
+#important-task {
+    display: none;
+}
+
+#completed-task {
+    display: none;
+}
+
 /* Aside Section */
 
 aside {
     border: 1px solid #000;
-    display: flex;
+    display: grid;
+    grid-column: 1fr;
 }
 
 .nav-aside {
@@ -109,18 +137,19 @@ aside {
 .my-list {
     font-size: 1.5rem;
     font-weight: 400;
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0 1rem .5rem;
     gap: .5rem;
 }
 
-.aside-menu {
+.aside-menu, .create-menu {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     gap: 1rem;
+    padding: 0 .5rem 0 .5rem;
 }
 
-.aside-menu li {
+.aside-menu li, .create-menu li {
     display: flex;
     align-items: center;
     font-size: 1.15rem;
@@ -129,6 +158,11 @@ aside {
     border: 1px solid #000;
     padding: .25rem;
     min-width: 60%;
+    border-radius: .2rem;
+}
+
+.aside-menu li:hover, .create-menu li:hover {
+    cursor: pointer;
 }
 
 .aside-menu i {
@@ -142,10 +176,35 @@ aside {
     justify-content: space-between;
 }
 
-.create-list button {
+.create-task, .create-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-task div:first-child, .create-project div:first-child {
+    display: flex;
+    gap: .25rem;
+    align-items: center;
+}
+
+.create-task div:nth-child(2), .create-project div:nth-child(2) {
+    display: flex;
+    gap: .25rem;
+}
+
+.create-menu i {
+    font-size: 1.35rem;
+}
+
+.create-task {
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    padding: .2rem;
+    font-size: .9rem;
+    padding: .1rem;
+}
+
+#create-task:hover {
+    cursor: pointer;
 }
 
 /* Footer Section */
@@ -154,6 +213,10 @@ footer {
     border: 1px solid #000;
     grid-area: footer;
     height: var(--footer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
 }
 
 /* Dialog Modal */
