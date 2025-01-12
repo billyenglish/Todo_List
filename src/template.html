@@ -14,7 +14,8 @@
         <header>
             <nav class="nav-menu">
                 <div class="nav-menu-left">
-                    <h1 id="logo">Todo List</h1>
+                    <i class="ri-list-check"></i>
+                    <h1 id="logo">Build Todo List</h1>
                 </div>
 
                 <div>
@@ -23,8 +24,20 @@
             </nav>
         </header>
         <main>
-            <section id="current-task">
+            <section id="current-task" class="section">
                 <h2 class="task-title">All</h2>
+            </section>
+            <section id="today-task" class="section">
+                <h2 class="task-title">Today</h2>
+            </section>
+            <section id="week-task" class="section">
+                <h2 class="task-title">Week</h2>
+            </section>
+            <section id="important-task" class="section">
+                <h2 class="task-title">Important</h2>
+            </section>
+            <section id="completed-task" class="section">
+                <h2 class="task-title">Completed</h2>
             </section>
         </main>
         <aside>
@@ -46,17 +59,18 @@
                     <div class="create-list">
                         <h3 class="my-list">Create List</h3>
 
-                        <button type="button">Create Task</button>
+                        <button type="button" id="create-task" class="create-task">Create Task</button>
                     </div>
 
-                    <div>
-                        
-                    </div>
+                    <ul class="create-menu">
+                        <li class="create-task"><div><i class="ri-list-check"></i>Create Task</div><div><i class="ri-edit-box-fill"></i><i class="ri-delete-bin-line"></i></div></li>
+                        <li class="create-project"><div><i class="ri-list-check"></i>Create Project</div><div><i class="ri-edit-box-fill"></i><i class="ri-delete-bin-line"></i></div></li>
+                    </ul>
                 </div>
             </nav>
         </aside>
         <footer>
-            Footer
+            <p>Todo List &copy; Copyright <span>2025</span> by Billy English</p>
         </footer>
     </div>
 </body>
