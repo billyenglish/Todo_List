@@ -74,6 +74,8 @@ header {
     font-weight: 400;
 }
 
+
+
 /* Main Section */
 
 main {
@@ -199,7 +201,7 @@ aside {
 
 .create-task {
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: .9rem;
+    font-size: .8rem;
     padding: .1rem;
 }
 
