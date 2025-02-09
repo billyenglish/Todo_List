@@ -14,13 +14,13 @@
         <header>
             <nav class="nav-menu">
                 <div class="nav-menu-left">
-                    <i class="ri-list-check"></i>
-                    <h1 id="logo">Build Todo List</h1>
+                    <i class="ri-menu-line"></i>
+                    <h1 id="logo">Todo List</h1>
                 </div>
 
                 <div id="toggle-menu">
                     <input type="checkbox" name="check">
-                    <label for="check" class="button"></label>
+                    <label for="check" id="button"></label>
                 </div>
             </nav>
         </header>
@@ -41,14 +41,14 @@
                 <h2 class="task-title">Completed</h2>
             </section>
         </main>
-        <aside>
+        <aside id="nav-aside">
             <nav class="nav-aside">
                 <div>
 
                     <h3 class="my-list">My List</h3>
 
                     <ul class="aside-menu">
-                        <li><i class="ri-calendar-view"></i> All</li>
+                        <li class="nav-item all-items"><i class="ri-calendar-view"></i> All</li>
                         <li><i class="ri-calendar-event-line"></i> Today</li>
                         <li><i class="ri-calendar-todo-line"></i> Week</li>
                         <li><i class="ri-calendar-schedule-fill"></i> Important</li>
@@ -74,5 +74,28 @@
             <p>Todo List &copy; Copyright <span>2025</span> by Billy English</p>
         </footer>
     </div>
+    <dialog>
+        <form id="todo-form">
+            <i class="close-form ri-close-large-line"></i>
+            <p class="form-title">Create My List</p>
+            <div class="form-input">
+                <input type="text" name="project-task-title" id="project-task-title" placeholder="Project Task/Title" />
+                <input type="text" name="subject-description" id="subject-description" placeholder="Subject Description" />
+            </div>
+            <div class="form-input">
+                <input type="text" name="" id="" />
+                <select name="project-task-importance" id="">
+                    <option value="">Level of Importance</option>
+                </select>
+            </div>
+            <div class="form-textarea">
+                <textarea name="todo-description" id="todo-description"></textarea>
+            </div>
+            <div class="form-controls">
+                <button type="button">Cancel</button>
+                <button type="button">Submit</button>
+            </div>
+        </form>
+    </dialog>
 </body>
 </html>

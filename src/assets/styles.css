@@ -30,7 +30,7 @@ body {
         "header header header header header header header header"
         "aside main main main main main main main"
         "footer footer footer footer footer footer footer footer";
-    grid-template-columns: 1.5fr 3fr 3fr;
+    grid-template-columns: 1fr 3fr 3fr;
 }
 
 /* Header Section */
@@ -47,13 +47,14 @@ header {
     justify-content: space-between;
     align-items: center;
     height: inherit;
-    padding: 0 5rem;
+    padding: 0 2rem;
 }
 
 .nav-menu-left {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .nav-menu-left {
@@ -82,6 +83,7 @@ main {
     border: 1px solid #000;
     grid-area: main;
     height: var(--main);
+    min-width: 100%;
 }
 
 .task-title {
@@ -222,3 +224,78 @@ footer {
 }
 
 /* Dialog Modal */
+
+dialog {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    margin: 0 auto;
+    border: none;
+}
+
+form {
+    border-radius: .25rem;
+    border: .2rem solid #000;
+    height: 26rem;
+    width: 34rem;
+}
+
+.close-form {
+    position: absolute;
+    font-size: 1.5rem;
+    right: 2rem;
+    top: 1.65rem;
+}
+
+#todo-form > div {
+    padding: .75rem;
+}
+
+.form-title {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: 1rem 0 0 1.5rem;
+}
+
+input[type=text], select {
+    height: 2.5rem;
+    min-width: 45%;
+}
+
+input[type=text]::placeholder {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #000;
+}
+
+textarea {
+    min-height: 8rem;
+    min-width: 95%;
+    resize: none;
+    overflow: hidden;
+}
+
+.form-input {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-textarea {
+    display: flex;
+    justify-content: center;
+}
+
+.form-controls {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    padding: 1rem 0;
+    max-width: 98%;
+    margin-top: .25rem;
+}
+
+.form-controls button {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    padding: .25rem;
+}
