@@ -9,16 +9,25 @@
 <body>
     <div class="container">
         <main>
-            Main
+            <section class="today-section">
+                <h2 class="section-title">Today's List</h2>
+
+                <div class="task-container">
+                    <h3 class="no-current-task">No Current Task</h3>
+                </div>
+            </section>
         </main>
         <aside>
             <nav>
-                <div>
-                    <h1 class="logo">My Todo List</h1>
+                <div class="logo-container">
+                    <h1 class="logo">
+                        <i class="fa-solid fa-list-check"></i>
+                        Todo List
+                    </h1>
                 </div>
 
                 <div class="nav-section">
-                    <div class="nav-list-container nav-list-header">
+                    <div class="nav-list-container nav-list-top">
                         <ul class="nav-list">
                             <li class="nav-item">
                                 <i class="fa-solid fa-inbox"></i>
@@ -27,7 +36,7 @@
                         </ul>
                     </div>
 
-                    <div class="nav-list-container nav-list-header">
+                    <div class="nav-list-container nav-list-center">
                         <ul class="nav-list">
                             <li class="nav-item">
                                 <i class="fa-solid fa-star"></i>
@@ -48,54 +57,56 @@
                         </ul>
                     </div>
 
-                    <div class="nav-list-container">
-                        <ul class="nav-list current-list">
-                            <li class="nav-item">
-                                <i class="fa-solid fa-house"></i>
-                                home
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="nav-list-bottom">
+                        <div class="nav-list-container">
+                            <ul class="nav-list current-list">
+                                <li class="nav-item">
+                                    <i class="fa-solid fa-house"></i>
+                                    home
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div class="nav-list-container">
-                        <ul class="nav-list current-list">
-                            <li class="nav-item">
-                                <i class="fa-solid fa-briefcase"></i>
-                                work
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="nav-list-container">
+                            <ul class="nav-list current-list">
+                                <li class="nav-item">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                    work
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div class="nav-list-container">
-                        <ul class="nav-list current-list">
-                            <li class="nav-item">
-                                <i class="fa-solid fa-diagram-project"></i>
-                                projects
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="nav-list-container">
+                            <ul class="nav-list current-list">
+                                <li class="nav-item">
+                                    <i class="fa-solid fa-diagram-project"></i>
+                                    projects
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div class="nav-list-container">
-                        <ul class="nav-list current-list">
-                            <li class="nav-item">
-                                <i class="fa-solid fa-calendar-day"></i>
-                                daily
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="nav-list-container">
+                            <ul class="nav-list current-list">
+                                <li class="nav-item">
+                                    <i class="fa-solid fa-calendar-day"></i>
+                                    daily
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div class="nav-list-container">
-                        <ul class="nav-list current-list">
-                            <li class="nav-item">
-                                <i class="fa-solid fa-exclamation"></i>
-                                important
-                            </li>
-                        </ul>
+                        <div class="nav-list-container">
+                            <ul class="nav-list current-list">
+                                <li class="nav-item">
+                                    <i class="fa-solid fa-exclamation"></i>
+                                    important
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <div class="nav-control-panel">
-                    <div class="panel-icon">
+                    <div class="aside-panel-icon">
                         <i class="fa-solid fa-plus"></i>
                     </div>
 
