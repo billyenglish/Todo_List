@@ -1,6 +1,9 @@
 import "./styles.css";
-import { greeting } from "./greeting.js";
+import { navSection } from "./js/navSection";
+import { taskForm } from "./js/taskForm";
 
-console.log(greeting);
+navSection();
+taskForm();
 
-console.log(window.innerHeight);
+
+

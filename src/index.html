@@ -9,29 +9,71 @@
 <body>
     <div class="container">
         <main>
-            <section class="task-section today-section">
+            <section class="task-section task-inbox" id="inbox-section">
+                <h2 class="section-title">Inbox Tasks</h2>
+
+                <div class="task-container">
+                    <h3 class="no-current-task">Empty Task Inbox</h3>
+                </div>
+            </section>
+            <section class="task-section today-section" id="today-section">
                 <h2 class="section-title">Today's Tasks</h2>
 
                 <div class="task-container">
                     <h3 class="no-current-task">No Current Task</h3>
                 </div>
             </section>
-            <section class="task-section upcoming-section">
+            <section class="task-section upcoming-section" id="upcoming-section">
                 <h2 class="section-title">Upcoming Tasks</h2>
 
                 <div class="task-container">
                     <h3 class="no-current-task">No Current Task</h3>
                 </div>
             </section>
-            <section class="task-section anytime-section">
+            <section class="task-section anytime-section" id="anytime-section">
                 <h2 class="section-title">Anytime Tasks</h2>
 
                 <div class="task-container">
                     <h3 class="no-current-task">No Current Task</h3>
                 </div>
             </section>
-            <section class="task-section someday-section">
+            <section class="task-section someday-section" id="someday-section">
                 <h2 class="section-title">Someday Task</h2>
+
+                <div class="task-container">
+                    <h3 class="no-current-task">No Current Task</h3>
+                </div>
+            </section>
+            <section class="task-section home-section" id="home-section">
+                <h2 class="section-title">Home Tasks</h2>
+
+                <div class="task-container">
+                    <h3 class="no-current-task">No Current Task</h3>
+                </div>
+            </section>
+            <section class="task-section work-section" id="work-section">
+                <h2 class="section-title">Work Tasks</h2>
+
+                <div class="task-container">
+                    <h3 class="no-current-task">No Current Task</h3>
+                </div>
+            </section>
+            <section class="task-section project-section" id="project-section">
+                <h2 class="section-title">Project Tasks</h2>
+
+                <div class="task-container">
+                    <h3 class="no-current-task">No Current Task</h3>
+                </div>
+            </section>
+            <section class="task-section daily-section" id="daily-section">
+                <h2 class="section-title">Daily Tasks</h2>
+
+                <div class="task-container">
+                    <h3 class="no-current-task">No Current Task</h3>
+                </div>
+            </section>
+            <section class="task-section important-section" id="important-section">
+                <h2 class="section-title">Important</h2>
 
                 <div class="task-container">
                     <h3 class="no-current-task">No Current Task</h3>
@@ -50,7 +92,7 @@
                 <div class="nav-section">
                     <div class="nav-list-container nav-list-top">
                         <ul class="nav-list">
-                            <li class="nav-item">
+                            <li class="nav-item inbox" id="inbox">
                                 <i class="fa-solid fa-inbox"></i>
                                 inbox
                             </li>
@@ -59,19 +101,19 @@
 
                     <div class="nav-list-container nav-list-center">
                         <ul class="nav-list">
-                            <li class="nav-item">
+                            <li class="nav-item today" id="today">
                                 <i class="fa-solid fa-star"></i>
                                 today
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item upcoming" id="upcoming">
                                 <i class="fa-regular fa-calendar-days"></i>
                                 upcoming
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item anytime" id="anytime">
                                 <i class="fa-solid fa-layer-group"></i>
                                 anytime
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item someday" id="someday">
                                 <i class="fa-solid fa-box-archive"></i>
                                 someday
                             </li>
@@ -81,7 +123,7 @@
                     <div class="nav-list-bottom">
                         <div class="nav-list-container">
                             <ul class="nav-list current-list">
-                                <li class="nav-item">
+                                <li class="nav-item home">
                                     <i class="fa-solid fa-house"></i>
                                     home
                                 </li>
@@ -90,7 +132,7 @@
 
                         <div class="nav-list-container">
                             <ul class="nav-list current-list">
-                                <li class="nav-item">
+                                <li class="nav-item work">
                                     <i class="fa-solid fa-briefcase"></i>
                                     work
                                 </li>
@@ -99,7 +141,7 @@
 
                         <div class="nav-list-container">
                             <ul class="nav-list current-list">
-                                <li class="nav-item">
+                                <li class="nav-item projects">
                                     <i class="fa-solid fa-diagram-project"></i>
                                     projects
                                 </li>
@@ -108,7 +150,7 @@
 
                         <div class="nav-list-container">
                             <ul class="nav-list current-list">
-                                <li class="nav-item">
+                                <li class="nav-item daily">
                                     <i class="fa-solid fa-calendar-day"></i>
                                     daily
                                 </li>
@@ -117,7 +159,7 @@
 
                         <div class="nav-list-container">
                             <ul class="nav-list current-list">
-                                <li class="nav-item">
+                                <li class="nav-item important">
                                     <i class="fa-solid fa-exclamation"></i>
                                     important
                                 </li>

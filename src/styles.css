@@ -60,15 +60,15 @@ main {
     font-weight: 300;
 }
 
-.upcoming-section {
-    display: none;
-}
-
-.anytime-section {
-    display: none;
-}
-
-.someday-section {
+.task-inbox,
+.upcoming-section,
+.anytime-section,
+.someday-section,
+.home-section,
+.work-section,
+.project-section,
+.daily-section,
+.important-section {
     display: none;
 }
 
@@ -130,7 +130,7 @@ nav {
 }
 
 .nav-item:hover {
-    transform: scale(1.1);
+    transform: scaleX(1.01);
     cursor: pointer;
 }
 
