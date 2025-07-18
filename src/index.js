@@ -1,5 +1,5 @@
 import './style.css';
-/*import 'boxicons';
+import 'boxicons';
 import 'remixicon/fonts/remixicon.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "../src/style.css";
@@ -18,7 +18,4 @@ const nav = navSection();
 app.appendChild(divContainer);
 divContainer.appendChild(aside);
 divContainer.appendChild(main);
-aside.appendChild(nav);*/
-
-const greeting = 'Hello World!';
-console.log(greeting);
+aside.appendChild(nav);
