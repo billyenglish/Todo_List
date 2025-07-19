@@ -1,6 +1,5 @@
 import './style.css';
 import "../src/style.css";
-import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import { container } from "../src/components/container.js";
 import { asideSection } from "../src/components/aside.js"
