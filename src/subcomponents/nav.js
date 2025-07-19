@@ -9,8 +9,8 @@ export const navSection = () => {
     logoContainer.setAttribute('class', 'logo-container');
     headerOne.setAttribute('class', 'nav-logo');
     headerOne.innerHTML = `
-                            <i class="ri-dashboard-line"></i>
-        Dashboard
+        <i class="ri-dashboard-line"></i>
+        Todo Board
     `;
 
     navMenuContainer.innerHTML = `

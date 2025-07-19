@@ -86,7 +86,7 @@ export const mainSection = () => {
             <div class="todo-container">
                 <div class="todo-header-section">
                     <div>
-                        <h3 class="todo-section-title">Done</h3>
+                        <h3 class="todo-section-title">Review</h3>
                     </div>
 
                     <div>
