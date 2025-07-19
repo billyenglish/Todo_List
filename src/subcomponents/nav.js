@@ -18,7 +18,7 @@ export const navSection = () => {
             <li class="menu-title">Pinned Projects</li>
             <li>
                 <button class="main-menu-button">
-                    <i class="ri-pushpin-2-fill start-icon"></i>
+                    <i class="fa-solid fa-thumbtack start-icon"></i>
                     Pinned Projects
                     <i class="ri-arrow-drop-right-fill second-icon"></i>
                 </button>
