@@ -1,6 +1,5 @@
 import './style.css';
 import "../src/style.css";
-import 'remixicon/fonts/remixicon.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import { container } from "../src/components/container.js";
