@@ -127,3 +127,75 @@ nav {
 }
 
 /* End of Aside Section */
+
+/* Main Section */
+
+.header-section, .subheader-section {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem .5rem .5rem .5rem;
+}
+
+.header-section {
+    margin-top: .5rem;
+}
+
+.subheader-section {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: .75rem;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.header-icon {
+    font-size: 1.25rem;
+}
+
+.main-title {
+    font-size: 1.35rem;
+    font-weight: 400;
+}
+
+.subheader-list {
+    display: flex;
+    gap: .5rem;
+    font-size: 1rem;
+}
+
+.todo-main {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem .5rem;
+}
+
+.todo-container {
+    border: 1px solid #000;
+    min-height: 40rem;
+    width: 18rem;
+    border-radius: .25rem;
+}
+
+.todo-header-section {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    align-items: center;
+}
+
+.todo-section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.toggle-todo {
+    font-size: 1.25rem;
+    transform: rotate(90deg);
+}
+
