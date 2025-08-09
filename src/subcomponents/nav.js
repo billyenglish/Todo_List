@@ -1,18 +1,17 @@
 export const navSection = () => {
+
     const navSection = document.createElement('nav');
     const logoContainer = document.createElement('div');
     const headerOne = document.createElement('h1');
     const navMenuContainer = document.createElement('div');
-    const navMenu = document.createElement('ul');
-    const navItems = document.createElement('li');
 
     logoContainer.setAttribute('class', 'logo-container');
-    headerOne.setAttribute('class', 'nav-logo');
-    headerOne.innerHTML = `
-        <i class="ri-dashboard-line"></i>
-        Todo Board
-    `;
+    headerOne.classList.add('nav-logo');
+    headerOne.innerHTML = `<i class="ri-dashboard-line"></i>`;
+    headerOne.textContent = "Todo Board";
+    navMenuContainer.appendChild(headerOne);
 
+    /*
     navMenuContainer.innerHTML = `
         <ul class="pinned-projects-menu">
             <li class="menu-title">Pinned Projects</li>
@@ -144,7 +143,7 @@ export const navSection = () => {
                 <ul class="shopping-wishlist-section">
                     <li class="list-item">Groceries</li>
                     <li class="list-item">Amazon / tech wishlist</li>
-                    <li class="list-item>Clothing</li>
+                    <li class="list-item">Clothing</li>
                 </ul>
             </li>
 
@@ -168,7 +167,7 @@ export const navSection = () => {
                 <ul class="list-section">
                     <li class="list-item">
                         <button class="setting-menu-button">
-                            <i class='bx  bx-user-circle'></i> 
+                            <i class='bx  bx-user-circle'></i>
                             Profile
                         </button>
                     </li>
@@ -182,7 +181,7 @@ export const navSection = () => {
             </li>
         </ul>
     `;
-
+    */
     navSection.appendChild(logoContainer);
     logoContainer.appendChild(headerOne);
     navSection.appendChild(navMenuContainer);
