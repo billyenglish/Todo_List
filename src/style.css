@@ -7,6 +7,10 @@
     list-style-type: none;
 }
 
+:root {
+    --main_menu_title: 1.1rem;
+}
+
 /* Body Section */
 
 body {
@@ -67,6 +71,66 @@ aside {
 
 .nav_list {
     display: none;
+}
+
+.menu_title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: .75rem 0;
+}
+
+.pinned_projects_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main_menu_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--main_menu_title);
+    gap: .35rem;
+}
+
+.dashboard_menu {
+    padding: 1.25rem 0;
+}
+
+.dashboard_button_item {
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    font-size: var(--main_menu_title);
+}
+
+.first_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    font-size: 1.25rem;
+}
+
+.second_icon {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.todo_main_menu {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.setting_menu_button {
+    display: flex;
+    align-items: center;
 }
 
 /* Main Section */
@@ -146,15 +210,17 @@ main {
 .todo_card_section {
     border: 1px solid #000;
     display: flex;
+    min-height: 50rem;
+    border-radius: .25rem;
 }
 
 .todo_header_section {
     border: 1px solid #000;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 100%;
     padding: 0 .5rem;
+    height: 2.5rem;
 }
 
 .todo_section_title {
@@ -164,6 +230,7 @@ main {
 }
 
 .delete_todo {
+    font-size: 1.1rem;
     background-color: transparent;
     border: none;
 }
