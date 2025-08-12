@@ -5,3 +5,5 @@ import './assets/styles/dialog.css';
 import './assets/styles/mediaquery.css';
 
 const dialog = document.querySelector('#dialog');
+
+dialog.showModal();
