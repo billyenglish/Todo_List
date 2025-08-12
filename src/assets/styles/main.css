@@ -1,0 +1,145 @@
+/* Header Section */
+
+.header_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.75rem;
+}
+
+.header_main {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.header_main i {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+.main_title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.create_task_button {
+    font-size: 1rem;
+    font-family: 'Karla';
+    padding: .1rem;
+    background-color: var(--background-color-alternate);
+}
+
+/* SubHeader Section */ 
+
+.subheader_section {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+}
+
+.subheader_list {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.todo_control_button {
+    font-size: 1rem;
+    background: none;
+    border: none;
+}
+
+.subheader_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo_header_section {
+    display: flex;
+    align-items: center;
+}
+
+.todo_control_button i {
+    color: var(--primary-color);
+}
+
+.search_image {
+    background-color: transparent;
+}
+
+.search_input_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    border: 1.5px solid #000;
+    border-radius: .25rem;
+}
+
+.search_image {
+    font-size: 1.35rem;
+}
+
+.search_input {
+    height: 1.5rem;
+    width: 14rem;
+    border: none;
+}
+
+.search_input:focus {
+    outline: var(--primary-color);
+}
+
+.search_input::placeholder {
+    font-family: Karla;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+/* End of SubHeader Section */ 
+
+/* Todo Card Section */
+
+.todo_main {
+    padding: 1rem 2rem;
+}
+
+.todo_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.todo_card_section {
+    border: 2px solid var(--border-color);
+    display: flex;
+    min-height: 48rem;
+    border-radius: .25rem;
+    background-color: var(--background-card-color);
+}
+
+.todo_header_section {
+    border-bottom: 2px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 .5rem;
+    height: 2.5rem;
+    background-color: var(--background-color-alternate);
+}
+
+.todo_section_title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--secondary-color-2);
+}
+
+.delete_todo {
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    color: var(--secondary-color-2);
+}

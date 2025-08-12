@@ -1,0 +1,75 @@
+@media screen and (max-width: 600px) {
+
+    .container {
+        display: grid;
+        grid-template-areas: 'main main main main main main';
+    }
+
+    aside {
+        display: flex;
+        border: 1px solid #999;
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: -14rem;
+    }
+
+    .subheader_section {
+        border: 1px solid #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    .subheader_list {
+        display: flex;
+        align-self: self-start;
+        gap: .5rem;
+    }
+
+    .subheader_search_list {
+        display: flex;
+        gap: .2rem;
+    }
+
+    .todo_control_button {
+        font-size: .9rem;
+    }
+
+    .search_input {
+        height: 2rem;
+        width: 8rem;
+    }
+
+    main {
+        border: 1px solid #000;
+        width: 100%;
+    }
+
+    .todo_container {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    .todo_card_section {
+        min-height: 12rem;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .subheader_section {
+        display: none;
+    }
+
+    .todo_container {
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+        gap: 1.5rem;
+    }
+
+    .todo_card_section {
+        min-height: 10rem;
+    }
+}
