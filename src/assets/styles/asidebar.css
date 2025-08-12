@@ -4,6 +4,7 @@ aside {
     grid-area: aside;
     display: flex;
     margin: 0 auto;
+    border-right: 2px solid var(--border-color);
 }
 
 /* Nav Section */
