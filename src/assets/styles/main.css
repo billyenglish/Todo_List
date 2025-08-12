@@ -24,10 +24,16 @@
 }
 
 .create_task_button {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: 'Karla';
     padding: .1rem;
     background-color: var(--background-color-alternate);
+    color: var(--secondary-color-2);
+    border: 1px solid var(--border-color);
+    font-weight: 400;
+    letter-spacing: .1rem;
+    padding: .15rem .25rem;
+    border-radius: .25rem;
 }
 
 /* SubHeader Section */ 
@@ -48,6 +54,13 @@
     font-size: 1rem;
     background: none;
     border: none;
+}
+
+.todo_control_button:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-underline-offset: .25rem;
+    text-decoration-thickness: 5px;
 }
 
 .subheader_list {
@@ -115,13 +128,14 @@
 .todo_card_section {
     border: 2px solid var(--border-color);
     display: flex;
+    flex-direction: column;
     min-height: 48rem;
     border-radius: .25rem;
     background-color: var(--background-card-color);
 }
 
 .todo_header_section {
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--background-color-alternate);
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -142,4 +156,32 @@
     background-color: transparent;
     border: none;
     color: var(--secondary-color-2);
+}
+
+.toggle_todo_delete {
+    display: flex;
+    justify-content: end;
+    z-index: 5;
+}
+
+.toggle_list {
+    border: 2px solid var(--background-color-alternate);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    width: 8rem;
+    text-align: center;
+    padding: .5rem 0;
+    gap: .5rem;
+    border-radius: .1rem;
+    background-color: var(--background-color-alternate);
+    opacity: .95;
+}
+
+.toggle_item_button {
+    border: none;
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: var(--background-card-color);
 }
