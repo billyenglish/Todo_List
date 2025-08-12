@@ -14,7 +14,7 @@
     "url": "git+https://github.com/billyenglish/Todo_List.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Billy English",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/billyenglish/Todo_List/issues"
@@ -35,5 +35,5 @@
     "boxicons": "^2.1.4",
     "remixicon": "^4.6.0"
   },
-  "description": ""
+  "description": "Todo Board is todo list builder that create task to manage your day."
 }
