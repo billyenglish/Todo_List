@@ -160,9 +160,13 @@
 }
 
 .toggle_todo_delete {
-    display: flex;
+    display: none;
     justify-content: end;
     z-index: 5;
+}
+
+.toggle_todo_delete.show {
+    display: flex;
 }
 
 .toggle_list {
