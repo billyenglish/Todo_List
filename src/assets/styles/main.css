@@ -60,7 +60,7 @@
     text-decoration: underline;
     text-decoration-color: var(--primary-color);
     text-underline-offset: .25rem;
-    text-decoration-thickness: 5px;
+    text-decoration-thickness: 2px;
 }
 
 .subheader_list {
@@ -111,7 +111,7 @@
     color: #000;
 }
 
-/* End of SubHeader Section */ 
+/* End of SubHeader Section */
 
 /* Todo Card Section */
 
