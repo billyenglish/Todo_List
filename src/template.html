@@ -253,20 +253,20 @@
             </section>
             <section class="todo_main">
                 <div class="todo_container">
-                    <section class="todo_card_section">
+                    <article class="todo_card_section">
                         <header class="todo_header_section">
                             <div>
                                 <h3 class="todo_section_title">Todo List</h3>
                             </div>
                             <div>
-                                <button type="button" class="delete_todo">
+                                <button type="button" class="delete_todo" id="delete_todo">
                                     <i class="fa-solid fa-ellipsis-vertical toggle_todo"></i>
                                 </button>
                             </div>
                         </header>
                         <section class="todo_card_subsection">
                             <div class="toggle_todo_delete">
-                                <ul class="toggle_list">
+                                <ul class="toggle_list todo_list" id="todo_list">
                                     <li class="toggle_items">
                                         <button class="toggle_item_button">Delete</button>
                                         
@@ -277,21 +277,21 @@
                                 </ul>
                             </div>
                         </section>
-                    </section>
+                    </article>
                     <article class="todo_card_section">
                         <header class="todo_header_section">
                             <div>
                                 <h3 class="todo_section_title">In Progress</h3>
                             </div>
                             <div>
-                                <button type="button" class="delete_todo">
+                                <button type="button" class="delete_todo" id="delete_in_progress">
                                     <i class="fa-solid fa-ellipsis-vertical toggle_todo"></i>
                                 </button>
                             </div>
                         </header>
                         <section class="todo_card_subsection">
                             <div class="toggle_todo_delete">
-                                <ul class="toggle_list">
+                                <ul class="toggle_list in_progress_list" id="in_progress_list">
                                     <li class="toggle_items">
                                         <button class="toggle_item_button">Delete</button>
                                         
@@ -316,7 +316,7 @@
                         </header>
                         <section class="todo_card_subsection">
                             <div class="toggle_todo_delete">
-                                <ul class="toggle_list">
+                                <ul class="toggle_list done_list" id="done_list">
                                     <li class="toggle_items">
                                         <button class="toggle_item_button">Delete</button>
                                         
@@ -341,7 +341,7 @@
                         </header>
                         <section class="todo_card_subsection">
                             <div class="toggle_todo_delete">
-                                <ul class="toggle_list">
+                                <ul class="toggle_list review_list" id="review_list">
                                     <li class="toggle_items">
                                         <button class="toggle_item_button">Delete</button>
                                         
