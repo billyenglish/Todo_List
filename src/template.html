@@ -10,402 +10,269 @@
 </head>
 <body>
     <div class="container">
-        <aside class="aside_section">
-            <nav class="nav_menu">
-                <div class="logo_container">
-                    <h1 class="nav_logo">
-                        <i class="ri-dashboard-line"></i>
-                        Todo Board
-                    </h1>
+        <nav id="nav_menu">
+            <div>
+                <ul class="nav_menu_list">
+                    <li class="nav_menu_items">
+                        <i class="fa-solid fa-square-check"></i>
+                    </li>
+
+                    <li class="nav_menu_items">
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </li>
+
+                    <li class="nav_menu_items">
+                        <i class="ri-search-line"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="nav_menu_list">
+                    <li class="nav_menu_items">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </li>
+                    <li class="nav_menu_items">
+                        <i class="fa-solid fa-bell"></i>
+                    </li>
+                    <li class="nav_menu_items">
+                        <i class="fa-solid fa-circle-question"></i>
+                    </li>
                 </div>
+            </div>
+        </nav>
+        <main>
+            <section class="todo_section_catergories">
+                <div class="todo_categories_container">
+                    <ul class="todo_list_menu">
+                        <li class="list_header">Main</li>
+                        <li class="list_items home" id="home_items">
+                            <div>
+                                <span>
+                                    <i class="ri-home-fill"></i>
+                                    Home
+                                </span>
+                            </div>
 
-                <div class="nav_menu_container">
-                    <ul class="pinned_projects_menu">
-                        <li class="menu_title">Pinned Projects</li>
-                        <li class="list_item">
-                            <button class="main_menu_button" id="main_menu_button">
-                                <i class="fa-solid fa-thumbtack first_icon"></i>
-                                Pinned Projects
-                                <i class="ri-arrow-drop-right-fill second_icon"></i>
-                            </button>
+                            <div>
+                                7
+                            </div>
+                        </li>
+                        <li class="list_items today" id="today_items">
+                            <div>
+                                <span>
+                                    <i class="ri-calendar-fill"></i>
+                                    Today
+                                </span>
+                            </div>
+
+                            <div>
+                                7
+                            </div>
+                        </li>
+                        <li class="list_items next_7_days" id="next_7_days">
+                            <div>
+                                <span>
+                                    <i class="ri-calendar-event-line"></i>
+                                    Next 7 Days
+                                </span>
+                            </div>
+
+                            <div>
+                                7
+                            </div>
+                        </li>
+                        <li class="list_items inbox_items" id="inbox_items">
+                            <div>
+                                <span>
+                                    <i class="fa-solid fa-inbox"></i>
+                                    Inbox
+                                </span>
+                            </div>
+
+                            <div>
+                                7
+                            </div>
                         </li>
                     </ul>
 
-                    <ul class="dashboard_menu">
-                        <li class="dashboard_button_item">
-                            <button type="button" class="dashboard_button_item">
-                                <i class="ri-dashboard-line first_icon"></i>
-                                Dashboard
-                                <i class="ri-arrow-drop-right-fill second_icon"></i>
-                            </button>
+                    <ul class="todo_list_menu">
+                        <li class="list_header">lists</li>
+                        <li class="list_items work_tasks" id="work_tasks">
+                            <div>
+                                <span>
+                                    <i class="ri-macbook-fill"></i>
+                                    Work Tasks
+                                </span>
+                            </div>
+
+                            <div>
+                                7
+                            </div>
+                        </li>
+                        <li class="list_items study_goals" id="study_goals">
+                            <div>
+                                <span>
+                                    <i class="ri-book-read-fill"></i>
+                                    Study Goals
+                                </span>
+                            </div>
+
+                            <div>
+                                7
+                            </div>
+                        </li>
+                        <li class="list_items travel_plans" id="travel_plans">
+                            <div>
+                                <span>
+                                    <i class="ri-luggage-cart-fill"></i>
+                                    Travel Plans
+                                </span>
+                            </div>
+
+                            <div>
+                                7
+                            </div>
+                        </li>
+                        <li class="list_items daily_todos" id="daily_todos">
+                            <div>
+                                <span>
+                                    <i class="ri-calendar-todo-fill"></i>
+                                    Daily To-Dos
+                                </span>
+                            </div>
+
+                            <div>
+                                7
+                            </div>
+                        </li>
+                        <li class="list_items life_errands" id="life_errands">
+                            <div>
+                                <span>
+                                    <i class="ri-list-check"></i>
+                                    Life Errands
+                                </span>
+                            </div>
+
+                            <div>
+                                7
+                            </div>
                         </li>
                     </ul>
 
-                    <ul class="todo_main_menu">
-                        <li class="menu_title">Menu</li>
+                    <ul class="todo_list_menu">
+                        <li class="list_header">Filters</li>
+                        <li class="list_items this_week">
+                            <div>
+                                <span>
+                                    <i class="fa-solid fa-calendar-week"></i>
+                                    This Week
+                                </span>
+                            </div>
 
-                        <li class="list_section">
-                            <button class="main_menu_button">
-                                <i class="fa-solid fa-briefcase first_icon"></i>
-                                Work
-                                <i class="ri-arrow-drop-right-fill second_icon"></i>
-                            </button>
-                            <ul class="work_section nav_list">
-                                <li class="list_item">Meetings</li>
-                                <li class="list_item">Deadlines</li>
-                                <li class="list_item">Emails</li>
-                                <li class="list_item">Projects</li>
-                            </ul>
+                            <div>
+                                7
+                            </div>
                         </li>
+                        <li class="list_items unscheduled">
+                            <div>
+                                <span>
+                                    <i class="fa-solid fa-calendar-xmark"></i>
+                                    Unscheduled
+                                </span>
+                            </div>
 
-                        <li class="list_section">
-                            <button class="main_menu_button">
-                                <i class="fa-solid fa-person first_icon"></i>
-                                Personal
-                                <i class="ri-arrow-drop-right-fill second_icon"></i>
-                            </button>
-                            <ul class="personal_section nav_list">
-                                <li class="list_item">Errands</li>
-                                <li class="list_item">Chores</li>
-                                <li class="list_item">Appointments</li>
-                                <li class="list_item">Journaling</li>
-                            </ul>
-                        </li>
-
-                        <li class="list_section">
-                            <button class="main_menu_button">
-                                <i class="fa-solid fa-notes-medical first_icon"></i>
-                                Health
-                                <i class="ri-arrow-drop-right-fill second_icon"></i>
-                            </button>
-                            <ul class="health_wellness_section nav_list">
-                                <li class="list_item">Exercise</li>
-                                <li class="list_item">Meal Planning</li>
-                                <li class="list_item">Meditation</li>
-                                <li class="list_item">Water Intake</li>
-                            </ul>
-                        </li>
-
-                        <li class="list_section">
-                            <button class="main_menu_button">
-                                <i class="fa-solid fa-lines-leaning first_icon"></i>
-                                Development
-                                <i class="ri-arrow-drop-right-fill second_icon"></i>
-                            </button>
-                            <ul class="learning_develop_section nav_list">
-                                <li class="list_item">Courses</li>
-                                <li class="list_item">Reading</li>
-                                <li class="list_item">Practice</li>
-                                <li class="list_item">Skill building</li>
-                            </ul>
-                        </li>
-
-                        <li class="list_section">
-                            <button class="main_menu_button">
-                                <i class="fa-solid fa-coins first_icon"></i>
-                                Finance
-                                <i class="ri-arrow-drop-right-fill second_icon"></i>
-                            </button>
-                            <ul class="finance_section nav_list">
-                                <li class="list_item">Budgeting</li>
-                                <li class="list_item">Bills</li>
-                                <li class="list_item">Subscription</li>
-                                <li class="list_item">Taxes</li>
-                            </ul>
-                        </li>
-
-                        <li class="list_section">
-                            <button class="main_menu_button">
-                                <i class="fa-solid fa-people-arrows first_icon"></i>
-                                Social
-                                <i class="ri-arrow-drop-right-fill second_icon"></i>
-                            </button>
-                            <ul class="social_relationships_section nav_list">
-                                <li class="list_item">Birthdays</li>
-                                <li class="list_item">Calls &amp; messages</li>
-                                <li class="list_item">Plans with friends or family</li>
-                            </ul>
-                        </li>
-
-                        <li class="list_section">
-                            <button class="main_menu_button">
-                                <i class="fa-solid fa-diagram-project first_icon"></i>
-                                Projects
-                                <i class="ri-arrow-drop-right-fill second_icon"></i>
-                            </button>
-                            <ul class="projects_goals_section nav_list">
-                                <li class="list_item">Side projects</li>
-                                <li class="list_item">Monthly goals</li>
-                                <li class="list_item">Weekly focus</li>
-                            </ul>
-                        </li>
-
-                        <li class="list_section">
-                            <button class="main_menu_button">
-                                <i class="fa-solid fa-bag-shopping first_icon"></i>
-                                Shopping
-                                <i class="ri-arrow-drop-right-fill second_icon"></i>
-                            </button>
-                            <ul class="shopping_wishlist_section nav_list">
-                                <li class="list_item">Groceries</li>
-                                <li class="list_item">Amazon / tech wishlist</li>
-                                <li class="list_item">Clothing</li>
-                            </ul>
-                        </li>
-
-                        <li class="list_section">
-                            <button class="main_menu_button">
-                            <i class="fa-solid fa-calendar-xmark first_icon"></i>
-                            Events
-                            <i class="ri-arrow-drop-right-fill second_icon"></i>
-                            </button>
-                             <ul class="travel_events_section nav_list">
-                                <li class="list_item">Trip prep</li>
-                                <li class="list_item">Event planning</li>
-                                <li class="list_item">Packing list</li>
-                            </ul>
+                            <div>
+                                7
+                            </div>
                         </li>
                     </ul>
 
-                    <ul class="todo_settings_menu">
-                        <li class="menu_title">
-                            Account
-                            <ul class="settings_menu">
-                                <li class="list_item">
-                                    <button class="setting_menu_button">
-                                        <i class='bx bx-user-circle first_icon'></i>
-                                        Profile
-                                    </button>
-                                </li>
-                                <li class="list-item">
-                                    <button class="setting_menu_button">
-                                        <i class="fa-solid fa-gear first_icon"></i>
-                                        Settings
-                                    </button>
-                                </li>
-                            </ul>
+                    <ul class="todo_list_menu">
+                        <li class="list_header">Other</li>
+                        <li class="list_items completed">
+                            <div>
+                                <span>
+                                    <i class="fa-solid fa-square-check"></i>
+                                    Completed
+                                </span>
+                            </div>
+
+                            <div>
+                                7
+                            </div>
+                        </li>
+                        <li class="list_items trash">
+                            <div>
+                                <span>
+                                    <i class="ri-delete-bin-fill"></i>
+                                    Trash
+                                </span>
+                            </div>
+
+                            <div>
+                                7
+                            </div>
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </aside>
-        <main class="main_section">
-            <section class="section_main">
-                <article class="header_section">
-                    <div class="header_main">
-                        <i class="ri-pushpin-2-fill header-icon"></i>
-                        <h2 class="main_title">Pinned Project</h2>
+            </section>
+            <section id="main_section" class="welcome_section">
+                <header class="header">
+                    <div class="header_container">
+                        <div class="main_section_container">
+                            <i class="ri-menu-unfold-4-line"></i>
+                            <h2 id="header_title">Welcome</h2>
+                        </div>
+
+                        <div>
+                            <ul id="header_menu_list">
+                                <li class="header_list_items">
+                                    <i class="ri-sort-desc"></i>
+                                </li>
+                                <li class="header_list_items second_item_header">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="create_task_button_container">
-                        <button type="button" class="create_task_button" id="create_task_button">
-                            Create Task
-                        </button>
+                    <div class="header_search_container">
+                        <div class="search_container">
+                            <input
+                                type="text"
+                                name="welcome_search"
+                                class="search_input"
+                                id="welcome_input"
+                                placeholder="+ Add task"
+                            >
+                            <div class="search_display">
+                                <i class="ri-calendar-event-fill"></i>
+                                <i class="ri-arrow-drop-down-line"></i>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                <article class="subheader_section">
-                    <div>
-                        <ul class="subheader_list">
-                            <li class="sub_item_list">
-                                <button type="button" class="todo_control_button">
-                                    Overview
-                                </button>
-                            </li>
-                            <li class="sub_item_list">
-                                <button type="button" class="todo_control_button">
-                                    List
-                                </button>
-                            </li>
-                            <li class="sub_item_list">
-                                <button type="button" class="todo_control_button">
-                                    Board
-                                </button>
-                            </li>
-                            <li class="sub_item_list" >
-                                <button type="button" class="todo_control_button">
-                                    Timeline
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <ul class="subheader_list subheader_search_list">
-                            <li class="sub_item_list">
-                                <button type="button" class="todo_control_button">
-                                    <i class="ri-sound-module-line"></i>
-                                    Filter
-                                </button>
-                            </li>
-                            <li class="sub_item_list">
-                                <button type="button" class="todo_control_button">
-                                    <i class="ri-sound-module-line"></i>
-                                    Sort
-                                </button>
-                            </li>
-                            <li class="sub_item_list search_input_item">
-                                <i class="ri-search-line search_image"></i>
-                                <input type="text" name="search_input" class="search_input" id="search_input" placeholder="Search Todo List" />
-                            </li>
-                        </ul>
+                </header>
+                <article id="welcome_article">
+                    <div class="todo_input_container">
+                        <input type="checkbox" name="welcome_input" class="todo_input" id="welcome_input">
+                        <p class="todo_details">dfsffs</p>
                     </div>
                 </article>
             </section>
-            <section class="todo_main">
-                <div class="todo_container">
-                    <article class="todo_card_section">
-                        <header class="todo_header_section">
-                            <div>
-                                <h3 class="todo_section_title">Todo List</h3>
-                            </div>
-                            <div>
-                                <button type="button" class="delete_todo" id="delete_todo">
-                                    <i class="fa-solid fa-ellipsis-vertical toggle_todo"></i>
-                                </button>
-                            </div>
-                        </header>
-                        <section class="todo_card_subsection">
-                            <div class="toggle_todo_delete">
-                                <ul class="toggle_list todo_list" id="todo_list">
-                                    <li class="toggle_items">
-                                        <button class="toggle_item_button">Delete</button>
-                                        
-                                    </li>
-                                    <li class="toggle_items">
-                                        <button class="toggle_item_button">Close</button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </article>
-                    <article class="todo_card_section">
-                        <header class="todo_header_section">
-                            <div>
-                                <h3 class="todo_section_title">In Progress</h3>
-                            </div>
-                            <div>
-                                <button type="button" class="delete_todo" id="delete_in_progress">
-                                    <i class="fa-solid fa-ellipsis-vertical toggle_todo"></i>
-                                </button>
-                            </div>
-                        </header>
-                        <section class="todo_card_subsection">
-                            <div class="toggle_todo_delete">
-                                <ul class="toggle_list in_progress_list" id="in_progress_list">
-                                    <li class="toggle_items">
-                                        <button class="toggle_item_button">Delete</button>
-                                    </li>
-                                    <li class="toggle_items">
-                                        <button class="toggle_item_button">Close</button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </article>
-                    <article class="todo_card_section">
-                        <header class="todo_header_section">
-                            <div>
-                                <h3 class="todo_section_title">Done</h3>
-                            </div>
-                            <div>
-                                <button type="button" class="delete_todo">
-                                    <i class="fa-solid fa-ellipsis-vertical toggle_todo"></i>
-                                </button>
-                            </div>
-                        </header>
-                        <section class="todo_card_subsection">
-                            <div class="toggle_todo_delete">
-                                <ul class="toggle_list done_list" id="done_list">
-                                    <li class="toggle_items">
-                                        <button class="toggle_item_button">Delete</button>
-                                        
-                                    </li>
-                                    <li class="toggle_items">
-                                        <button class="toggle_item_button">Close</button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </article>
-                    <article class="todo_card_section">
-                        <header class="todo_header_section">
-                            <div>
-                                <h3 class="todo_section_title">Review</h3>
-                            </div>
-                            <div>
-                                <button type="button" class="delete_todo" id="delete_todo">
-                                    <i class="fa-solid fa-ellipsis-vertical toggle_todo"></i>
-                                </button>
-                            </div>
-                        </header>
-                        <section class="todo_card_subsection">
-                            <div class="toggle_todo_delete">
-                                <ul class="toggle_list review_list" id="review_list">
-                                    <li class="toggle_items">
-                                        <button class="toggle_item_button">Delete</button>
-                                    </li>
-                                    <li class="toggle_items">
-                                        <button class="toggle_item_button">Close</button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </article>
-                </div>
+            <section>
+                <header class="todo_details_header">
+                    <div>
+                        Left
+                    </div>
+
+                    <div>
+                        Right
+                    </div>
+                </header>
             </section>
         </main>
-        <footer>
-            <p>&copy; 2025 Todo Board App. All rights reserved</p>
-        </footer>
     </div>
-    <dialog id="dialog">
-        <div class="form_container">
-            <form>
-                <div class="close_task_form_container">
-                    <button type="button" class="close_form_button" id="close_form_button">
-                        <i class="ri-close-fill"></i>
-                    </button>
-                </div>
-
-                <h2 class="task_form_title">Create Task</h2>
-
-                <div class="task_title_container">
-                    <input type="text" name="task_title" class="task_title" id="task_title" placeholder="Task Title">
-                </div>
-
-                <div class="select_task_section">
-                    <select name="select_task" class="select_task" id="select_task">
-                        <option aria-selected="true" selected>Select Task</option>
-                    </select>
-                </div>
-
-                <div class="select_priority_section">
-                    <select name="task_priority_level" id="task_priority_level">
-                        <option selected>Priority Level</option>
-                    </select>
-                </div>
-
-                <div class="date_section">
-                    <label class="date_label" for="start_date">Start Date:
-                        <input type="date" name="start_date" class="date_input" id="start_date">
-                    </label>
-
-                    <label class="date_label" for="end_date">End Date:
-                        <input type="date" name="end_date" class="date_input" id="end_date">
-                    </label>
-                </div>
-
-                <div>
-                    <textarea name="task_description" class="task_description" id="task_description" placeholder="Task Description"></textarea>
-                </div>
-
-                <div class="task_control_panel">
-                    <button type="button" class="task_button">Cancel</button>
-                    <button type="button" class="task_button">Create</button>
-                </div>
-            </form>
-        </div>
-    </dialog>
     <div id="app"></div>
 </body>
 </html>
